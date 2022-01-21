@@ -12,12 +12,39 @@ events_html = response_events.text
 # print(events_html)
 
 soup_events = BeautifulSoup(events_html, "html.parser")
+
+
+
 href_list = []
-select_events = soup_events.select(selector="p tbody tr td")
+final_href = []
+select_events = soup_events.select(selector="p tbody tr td a")
 
-# print(select_events.get("href"))
+for x in select_events:
+    href_list.append(x)
+
+for y in href_list:
+    limbo = []
+    num = 0
+    # print(y)
+    for h in str(y):
+        if h == "\"":
+            num += 1
+        if num == 2:
+            combined = "".join(limbo)
+            # print(combined)
+            final_href.append(combined)
+            break
+        if num == 1:
+            if h == "\"":
+                pass
+            else:
+                limbo.append(h)
+
+for this in final_href:
+    print(this)
 
 
+# select_events = soup_events.select(selector="p tbody tr td")
 
 # listy = []
 # for x in select_events:
