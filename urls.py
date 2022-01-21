@@ -12,11 +12,28 @@ events_html = response_events.text
 # print(events_html)
 
 soup_events = BeautifulSoup(events_html, "html.parser")
+href_list = []
+select_events = soup_events.select(selector="p tbody tr td")
 
-events_p_block = soup_events.find(name="p", class_="card-text")
-select_evets = events_p_block.select(selector="p tbody")
-for x in select_evets:
-    print(x.text)
+# print(select_events.get("href"))
+
+
+
+# listy = []
+# for x in select_events:
+#     x = x.text.strip("\n")
+#     listy.append(x)
+#     # print(x)
+# print(listy)
+# for y in listy:
+#     try:
+#         int(y)
+#     except ValueError:
+#         print(y)
+#     else:
+#         pass
+
+
 
 
 # event page for a specific event (the demonstration event)
