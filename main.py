@@ -5,9 +5,10 @@ import tkinter as tk
 # CONSTANTS
 #
 # Tkinter
-DROPDOWN_PADDING = (15, 15)
+# DROPDOWN_PADDING = (15, 15)
 
-events_data = "insert class"
+events_data = events_classes.EventsData()
+print(events_data.json_file)
 
 
 
