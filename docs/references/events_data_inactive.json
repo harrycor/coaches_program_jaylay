@@ -1,0 +1,584 @@
+{
+    "events": {
+        "Demonstration event": {
+            "date": "Jan. 1, 2023",
+            "location": "Somewhere Over The Rainbow",
+            "url": "/event/174/"
+        },
+        "WAR Zone #15 @ Dynamic": {
+            "date": "March 6, 2022",
+            "location": "Hauppage, NY",
+            "url": "/event/162/"
+        },
+        "Who is the Champion of Long Island? #3": {
+            "date": "Feb. 6, 2022",
+            "location": "415 Oser Ave Unit H, Hauppauge, NY 11788",
+            "url": "/event/166/"
+        },
+        "WAR Zone @ Kings Park #4": {
+            "date": "Jan. 16, 2022",
+            "location": "William T Rogers Middle School, 97 Old Dock Rd, Kings Park, NY 11754",
+            "url": "/event/151/"
+        },
+        "WAR Zone @ Perkiomen Valley Youth Wrestling": {
+            "date": "Jan. 16, 2022",
+            "location": "509 gravel pike collegeville pa 19426",
+            "url": "/event/168/"
+        },
+        "Who is the Champion of Long Island? #2": {
+            "date": "Jan. 2, 2022",
+            "location": "415 Oser Ave Unit H, Hauppauge, NY 11788",
+            "url": "/event/165/"
+        },
+        "WAR Zone @ Kings Park #3": {
+            "date": "Dec. 19, 2021",
+            "location": "William T Rogers Middle School, 97 Old Dock Rd, Kings Park, NY 11754",
+            "url": "/event/150/"
+        },
+        "PRIDE Swan cup": {
+            "date": "Dec. 12, 2021",
+            "location": "Floreat Beach - Western Australia 6015, Australia",
+            "url": "/event/175/"
+        },
+        "Who is the Champion of Long Island? #1": {
+            "date": "Dec. 5, 2021",
+            "location": "415 Oser Ave Unit H, Hauppauge, NY 11788",
+            "url": "/event/164/"
+        },
+        "WARZONE at NE Gold Duals #4": {
+            "date": "Dec. 4, 2021",
+            "location": "842 Upper Union street Franklin MA",
+            "url": "/event/149/"
+        },
+        "WAR Zone @ Metuchen Sports Center #2": {
+            "date": "Nov. 21, 2021",
+            "location": "302 HIGH STREET METUCHEN, NJ",
+            "url": "/event/145/"
+        },
+        "Test war": {
+            "date": "Nov. 15, 2021",
+            "location": "Oakdale",
+            "url": "/event/173/"
+        },
+        "Beginner Friendly WAR Zone Wrestling Competition @ Dynamic": {
+            "date": "Nov. 14, 2021",
+            "location": "415 Oser Ave Unit H, Hauppauge, NY 11788",
+            "url": "/event/163/"
+        },
+        "WAR Zone @ Total Turf #3": {
+            "date": "Nov. 6, 2021",
+            "location": "614 Lambs Rd, Pitman NJ, 08071",
+            "url": "/event/137/"
+        },
+        "Friday Night Scraps #5": {
+            "date": "Nov. 5, 2021",
+            "location": "AWA South Shore - 9760 S 60th St, Franklin, WI 53132",
+            "url": "/event/161/"
+        },
+        "Maryland WAR Zone": {
+            "date": "Oct. 30, 2021",
+            "location": "MSWA Franklin Training Center - 1332 Londontown Blvd, Eldersburg, MD 21784",
+            "url": "/event/170/"
+        },
+        "WAR Zone @ The Club": {
+            "date": "Oct. 23, 2021",
+            "location": "The Club - 105 Warwick Street, Lititz Pa. 17543",
+            "url": "/event/157/"
+        },
+        "WAR Zone #14 @ Dynamic": {
+            "date": "Oct. 17, 2021",
+            "location": "Hauppage, NY",
+            "url": "/event/123/"
+        },
+        "Panhandle Preseason Kickoff": {
+            "date": "Oct. 16, 2021",
+            "location": "Florida State University School - 3000 schoolhouse road, Tallahassee FL 32311",
+            "url": "/event/153/"
+        },
+        "Friday Night Scraps #4": {
+            "date": "Oct. 15, 2021",
+            "location": "AWA Madison - 2556 Advance Road, Suite A, Madison WI 53718",
+            "url": "/event/160/"
+        },
+        "WAR Zone @ Metuchen Sports Center #1": {
+            "date": "Oct. 3, 2021",
+            "location": "302 HIGH STREET METUCHEN, NJ",
+            "url": "/event/144/"
+        },
+        "WAR Zone @ La Bombonera #2": {
+            "date": "Oct. 2, 2021",
+            "location": "314 Bay W Blvd, New Castle, DE 19720",
+            "url": "/event/139/"
+        },
+        "Iron Faith WarZone #2": {
+            "date": "Oct. 2, 2021",
+            "location": "Iron Faith Wrestling Club: 53 Venturi Ave Warwick RI 02888",
+            "url": "/event/169/"
+        },
+        "Friday Night Scraps #3": {
+            "date": "Oct. 1, 2021",
+            "location": "AWA Green Bay - 1515 Glory Rd, Green Bay, WI 54304",
+            "url": "/event/159/"
+        },
+        "WAR Zone @ Total Turf #2": {
+            "date": "Sept. 25, 2021",
+            "location": "614 Lambs Rd, Pitman NJ, 08071",
+            "url": "/event/136/"
+        },
+        "Friday Night Scraps #2": {
+            "date": "Sept. 24, 2021",
+            "location": "AWA Lake Country(Hartland) -596 North Shore Drive, Hartland, WI 53029",
+            "url": "/event/158/"
+        },
+        "Test Event - SG": {
+            "date": "Sept. 23, 2021",
+            "location": "MSWA Franklin Training Center - 1332 Londontown Blvd, Eldersburg, MD 21784",
+            "url": "/event/171/"
+        },
+        "WAR Zone #13 @ Dynamic": {
+            "date": "Sept. 19, 2021",
+            "location": "Hauppage, NY",
+            "url": "/event/122/"
+        },
+        "WARZONE at New England Gold #3": {
+            "date": "Sept. 18, 2021",
+            "location": "842 upper union street Franklin MA 02038",
+            "url": "/event/148/"
+        },
+        "Test Event - SG 1": {
+            "date": "Sept. 15, 2021",
+            "location": "Test",
+            "url": "/event/172/"
+        },
+        "Friday Night Scraps": {
+            "date": "Sept. 10, 2021",
+            "location": "AWA North Shore - 175 B. Main Street Thiensville, WI 53092",
+            "url": "/event/156/"
+        },
+        "WAR Zone @ Carmel Sports": {
+            "date": "Sept. 4, 2021",
+            "location": "111 Old Rte 6, Carmel Hamlet, NY 10512",
+            "url": "/event/138/"
+        },
+        "WAR Zone @ La Bombonera #1": {
+            "date": "Aug. 28, 2021",
+            "location": "314 Bay W Blvd, New Castle, DE 19720",
+            "url": "/event/140/"
+        },
+        "Iron Faith WarZone": {
+            "date": "Aug. 28, 2021",
+            "location": "Iron Faith Wrestling Club: 53 Venturi Ave Warwick RI 02888",
+            "url": "/event/155/"
+        },
+        "Dynamic Wrestling Camp for 1st-6th graders (Info at www.WellRunTournaments.com) 8/23/21-8/26/21": {
+            "date": "Aug. 23, 2021",
+            "location": "Dynamic Wrestling Academy - 415 Oser Ave, Suite H, Hauppauge, NY 11788",
+            "url": "/event/154/"
+        },
+        "WAR Zone @ Total Turf #1": {
+            "date": "Aug. 15, 2021",
+            "location": "614 Lambs Rd, Pitman NJ, 08071",
+            "url": "/event/135/"
+        },
+        "WAR Zone #12 @ Dynamic": {
+            "date": "Aug. 8, 2021",
+            "location": "Hauppage, NY",
+            "url": "/event/121/"
+        },
+        "WAR Zone @ Rev #7": {
+            "date": "Aug. 1, 2021",
+            "location": "MI Revolution Training Center - 560 W. Highland Rd, Highland, MI 48357",
+            "url": "/event/146/"
+        },
+        "The Warzone @ Wesley Chapel": {
+            "date": "July 25, 2021",
+            "location": "Land O Lakes Recreation Center, 3032 Collier Parkway, Land O Lakes, FL 34639",
+            "url": "/event/152/"
+        },
+        "WARZONE at New England Gold #2": {
+            "date": "July 24, 2021",
+            "location": "New England Gold - 842 Upper Union St, Franklin, MA 02038",
+            "url": "/event/134/"
+        },
+        "Wrestling camp for advanced and intermediate wrestlers (Info at www.WellRunTournaments.com) 7/19/21-7/23/21": {
+            "date": "July 19, 2021",
+            "location": "Hauppauge, NY",
+            "url": "/event/127/"
+        },
+        "WAR Zone @Turf City": {
+            "date": "July 17, 2021",
+            "location": "1235 NJ-23, Wayne, NJ 07470",
+            "url": "/event/142/"
+        },
+        "WAR Zone #11 @ Dynamic": {
+            "date": "July 11, 2021",
+            "location": "Hauppage, NY",
+            "url": "/event/120/"
+        },
+        "Dynamic Wrestling Camp for 1st-6th graders (Info at www.WellRunTournaments.com) 7/5/21-7/8/21": {
+            "date": "July 5, 2021",
+            "location": "Dynamic Wrestling Academy - 415 Oser Ave, Suite H, Hauppauge, NY 11788",
+            "url": "/event/132/"
+        },
+        "WARZONE at New England Gold #1": {
+            "date": "June 20, 2021",
+            "location": "New England Gold - 842 Upper Union St, Franklin, MA 02038",
+            "url": "/event/133/"
+        },
+        "WAR Zone @ Rev #6": {
+            "date": "June 19, 2021",
+            "location": "MI Revolution Training Center - 560 W. Highland Rd, Highland, MI 48357",
+            "url": "/event/143/"
+        },
+        "WAR Zone #10 @ Dynamic": {
+            "date": "June 13, 2021",
+            "location": "The Dynamic Wrestling Academy - 415 Oser Ave, Hauppauge, NY 11788 (using back entrance)",
+            "url": "/event/119/"
+        },
+        "WAR Zone #9 @ Dynamic": {
+            "date": "May 16, 2021",
+            "location": "Hauppage, NY",
+            "url": "/event/118/"
+        },
+        "Extreme Wrestling WAR Zone Tournament": {
+            "date": "April 24, 2021",
+            "location": "Schuyler Sports Complex 2413 New York Highway 5 Utica, NY 13502",
+            "url": "/event/125/"
+        },
+        "WAR Zone #8 @ Dynamic": {
+            "date": "April 11, 2021",
+            "location": "Hauppage, NY",
+            "url": "/event/117/"
+        },
+        "WAR Zone #7 @ Dynamic": {
+            "date": "March 28, 2021",
+            "location": "Hauppage, NY",
+            "url": "/event/116/"
+        },
+        "WAR Zone #6 @ Dynamic": {
+            "date": "March 14, 2021",
+            "location": "Hauppage, NY",
+            "url": "/event/115/"
+        },
+        "March Matness at REV": {
+            "date": "March 7, 2021",
+            "location": "MI Revolution Training Center - 560 W. Highland Rd, Highland, MI 48357",
+            "url": "/event/124/"
+        },
+        "WAR Zone at Arsenal Wrestling Club (for ages 6-14) *****SOLD OUT*****": {
+            "date": "Feb. 28, 2021",
+            "location": "Pottstown YMCA \u2013 724 N Adams St. Pottstown, PA 19464",
+            "url": "/event/114/"
+        },
+        "WAR Zone #5 @ Dynamic": {
+            "date": "Feb. 27, 2021",
+            "location": "Hauppage, NY",
+            "url": "/event/112/"
+        },
+        "WAR Zone #4 @ Dynamic": {
+            "date": "Feb. 13, 2021",
+            "location": "Hauppage, NY",
+            "url": "/event/111/"
+        },
+        "WAR Zone Super Bowl Blitz (SOLD OUT)": {
+            "date": "Feb. 7, 2021",
+            "location": "Total Wrestling - 1091 Mearns Rd, Warminster, PA 18974",
+            "url": "/event/104/"
+        },
+        "WAR Zone at Rev #5 (SOLD OUT)": {
+            "date": "Feb. 6, 2021",
+            "location": "MI Revolution Training Center - 560 W. Highland Rd, Highland, MI 48357",
+            "url": "/event/110/"
+        },
+        "WAR Zone #3 @ Dynamic": {
+            "date": "Jan. 24, 2021",
+            "location": "Near Hauppauge, NY",
+            "url": "/event/109/"
+        },
+        "WAR Zone #2 @ Dynamic": {
+            "date": "Jan. 3, 2021",
+            "location": "Near Commack, NY",
+            "url": "/event/108/"
+        },
+        "WAR Zone at Rev #4": {
+            "date": "Jan. 2, 2021",
+            "location": "MI Revolution Training Center - 560 W. Highland Rd, Highland, MI 48357",
+            "url": "/event/107/"
+        },
+        "WAR Zone @ Dynamic": {
+            "date": "Sept. 8, 2019",
+            "location": "The Dynamic Wrestling Academy - 37 Dunton Ave, Deerpark, NY 11729",
+            "url": "/event/59/"
+        },
+        "The Fun and Safe wrestling competition for 4-10 year olds (Cancelled due to NJ lockdown)": {
+            "date": "Dec. 12, 2020",
+            "location": "American MMA and Wrestling - 9 Minnetonka Road, Somerdale, NJ",
+            "url": "/event/103/"
+        },
+        "WAR Zone at Rev #3": {
+            "date": "Dec. 5, 2020",
+            "location": "MI Revolution Training Center - 560 W. Highland Rd, Highland, MI 48357",
+            "url": "/event/100/"
+        },
+        "Big East Turkey Bowl - a WAR Zone event": {
+            "date": "Nov. 15, 2020",
+            "location": "Monroe Sports Center \u2013 4 Farrington Blvd, Monroe Township, NJ 08831",
+            "url": "/event/98/"
+        },
+        "WAR Zone #10, Series 2 Finale @ Altered Beast": {
+            "date": "Nov. 8, 2020",
+            "location": "Altered Beast Wrestling Academy - 237 Old River Rd, Wilkes-Barre, PA 18702",
+            "url": "/event/99/"
+        },
+        "WAR Zone at Rev #2": {
+            "date": "Nov. 7, 2020",
+            "location": "MI Revolution Training Center - 560 W. Highland Rd, Highland, MI 48357",
+            "url": "/event/97/"
+        },
+        "WAR Zone #9 @ Altered Beast": {
+            "date": "Oct. 24, 2020",
+            "location": "Altered Beast Wrestling Academy - 237 Old River Rd, Wilkes-Barre, PA 18702",
+            "url": "/event/96/"
+        },
+        "WAR Zone #8 @ Altered Beast": {
+            "date": "Oct. 17, 2020",
+            "location": "Altered Beast Wrestling Academy - 237 Old River Rd, Wilkes-Barre, PA 18702",
+            "url": "/event/95/"
+        },
+        "WAR Zone Michigan": {
+            "date": "Oct. 10, 2020",
+            "location": "MI Revolution Training Center - 560 W. Highland Rd, Highland, MI 48357",
+            "url": "/event/92/"
+        },
+        "WAR Zone #7 @ Altered Beast": {
+            "date": "Oct. 3, 2020",
+            "location": "Altered Beast Wrestling Academy - 237 Old River Rd, Wilkes-Barre, PA 18702",
+            "url": "/event/94/"
+        },
+        "WAR Zone #5 @ Altered Beast": {
+            "date": "Aug. 29, 2020",
+            "location": "Altered Beast Wrestling Academy - 237 Old River Rd, Wilkes-Barre, PA 18702",
+            "url": "/event/90/"
+        },
+        "NUWAY Summer Nationals WAR Zone": {
+            "date": "Aug. 17, 2020",
+            "location": "Harrah's Casino Hotel Resort - 777 Harrah's Blvd, Atlantic City, NJ 08401",
+            "url": "/event/84/"
+        },
+        "WAR Zone #3 @ Altered Beast": {
+            "date": "Aug. 15, 2020",
+            "location": "Altered Beast Wrestling Academy - 237 Old River Rd, Wilkes-Barre, PA 18702",
+            "url": "/event/88/"
+        },
+        "previous WAR Zone @ Dynamic": {
+            "date": "Aug. 15, 2020",
+            "location": "Deerpark",
+            "url": "/event/91/"
+        },
+        "WAR Zone #2 @ Altered Beast": {
+            "date": "Aug. 8, 2020",
+            "location": "Altered Beast Wrestling Academy -  237 Old River Rd, Wilkes-Barre, PA 18702",
+            "url": "/event/87/"
+        },
+        "WAR Zone #1 @ Altered Beast": {
+            "date": "Aug. 1, 2020",
+            "location": "Altered Beast Wrestling Academy -  237 Old River Rd, Wilkes-Barre, PA 18702",
+            "url": "/event/86/"
+        },
+        "NUWAY - The Rumble - WAR Zone": {
+            "date": "July 10, 2020",
+            "location": "Heart of Oklahom Conference Center - 1700 W Independence St, Shawnee, OK 74804",
+            "url": "/event/83/"
+        },
+        "The fun and safe wrestling competition for 4-7 year old beginners": {
+            "date": "April 19, 2020",
+            "location": "The Dynamic Wrestling Academy - 37 Dunton Avenue, Deerpark, NY 11729",
+            "url": "/event/80/"
+        },
+        "Free WAR Zone @ Dynamic Wrestling Academy": {
+            "date": "March 15, 2020",
+            "location": "The Dynamic Wrestling Academy - 37 Dunton Avenue, Deerpark, NY 11729",
+            "url": "/event/82/"
+        },
+        "Long Island Youth Wrestling League Event #4 - The Soccer House": {
+            "date": "March 8, 2020",
+            "location": "The Soccer House - 525 Eagle Avenue, West Hempstead, NY 11552",
+            "url": "/event/65/"
+        },
+        "Fun and Safe Competition for Beginners 4-6 years old": {
+            "date": "Feb. 16, 2020",
+            "location": "The Dynamic Wrestling Academy - 37 Dunton Ave, Deerpark, NY  11729",
+            "url": "/event/76/"
+        },
+        "Long Island Youth Wrestling League Event #5 - The Sports Arena": {
+            "date": "Feb. 2, 2020",
+            "location": "The Sports Arena: 620 Middle Country Road, St James, NY 11780",
+            "url": "/event/66/"
+        },
+        "WAR Zone - west Hempstead (was the 13th Annual Ted Peterson Jr Wrestling Competition)": {
+            "date": "Jan. 19, 2020",
+            "location": "The Soccer House - 525 Eagle Ave, West Hempstead, NY 11552",
+            "url": "/event/73/"
+        },
+        "Long Island Youth Wrestling League Event #3 - Kings Park": {
+            "date": "Jan. 12, 2020",
+            "location": "William T Rogers Middle School, 97 Old Dock Rd, Kings Park, NY 11754",
+            "url": "/event/64/"
+        },
+        "Battle of the Cosmos (New Hampshire)": {
+            "date": "Jan. 5, 2020",
+            "location": "The Phanzone Sports Center: 142 NH-111, Hampstead, NH, 03841",
+            "url": "/event/74/"
+        },
+        "Long Island Youth Wrestling League Event #2 - The Sports Arena": {
+            "date": "Dec. 22, 2019",
+            "location": "The Sports Arena: 620 Middle Country Road, St James, NY 11780",
+            "url": "/event/63/"
+        },
+        "Long Island Youth Wrestling League Event #1 - Kings Park": {
+            "date": "Dec. 15, 2019",
+            "location": "William T Rogers Middle School, 97 Old Dock Rd, Kings Park, NY 11754",
+            "url": "/event/62/"
+        },
+        "WAR Zone @ The Rock Rec Center in Shavertown, PA": {
+            "date": "Sept. 28, 2019",
+            "location": "The Rock Rec Center - 340 Carverton Rd, Shavertown, PA 18708",
+            "url": "/event/58/"
+        },
+        "dynamic mini event for varsity": {
+            "date": "Sept. 23, 2019",
+            "location": "Deerpark",
+            "url": "/event/71/"
+        },
+        "WAR Zone - Massapequa #5": {
+            "date": "May 19, 2019",
+            "location": "The Player\u2019s Futsol: 5600 Old Sunrise Highway, Massapequa, NY 11758",
+            "url": "/event/54/"
+        },
+        "WAR Zone - Massapequa #4": {
+            "date": "April 28, 2019",
+            "location": "The Player\u2019s Futsol: 5600 old sunrise highway, massapequa, NY 11758",
+            "url": "/event/53/"
+        },
+        "WAR Zone CT WAY": {
+            "date": "April 13, 2019",
+            "location": "The SONO Field House - 365 Dr Martin Luther King Jr Dr, Norwalk, CT 06854",
+            "url": "/event/55/"
+        },
+        "WAR Zone - Massapequa #3": {
+            "date": "March 24, 2019",
+            "location": "The Player\u2019s Futsol: 5600 old sunrise highway, massapequa, NY 11758",
+            "url": "/event/52/"
+        },
+        "FREE EVENT - Unlimited matches - WAR Zone at Fulcrum Sportsplex": {
+            "date": "March 16, 2019",
+            "location": "Fulcrum Sportsplex, 3 Coleman Court, Southampton, New Jersey, 08088",
+            "url": "/event/48/"
+        },
+        "WAR Zone Super Event": {
+            "date": "Feb. 24, 2019",
+            "location": "The Sports Arena: 620 Middle Country Road, St James, NY 11780",
+            "url": "/event/45/"
+        },
+        "WAR Zone - Kings Park #2": {
+            "date": "Feb. 3, 2019",
+            "location": "William T Rogers Middle School: 97 Old Dock Road, Kings Park, NY 11754",
+            "url": "/event/44/"
+        },
+        "FREE WAR Zone - Massapequa #2": {
+            "date": "Jan. 20, 2019",
+            "location": "The Player\u2019s Futsol: 5600 old sunrise highway, massapequa, NY 11758",
+            "url": "/event/43/"
+        },
+        "WAR Zone - Lindenhurst": {
+            "date": "Jan. 6, 2019",
+            "location": "Lindenhurst High School: 300 Charles Street, Lindenhurst, NY 11757",
+            "url": "/event/42/"
+        },
+        "WAR Zone - Massapequa": {
+            "date": "Dec. 30, 2018",
+            "location": "The Player\u2019s Futsol: 5600 old sunrise highway, massapequa, NY 11758",
+            "url": "/event/41/"
+        },
+        "WAR Zone - St James": {
+            "date": "Dec. 23, 2018",
+            "location": "The Sports Arena: 620 Middle Country Road, St James, NY 11780",
+            "url": "/event/40/"
+        },
+        "WAR Zone - Kings Park": {
+            "date": "Dec. 16, 2018",
+            "location": "William T Rogers Middle School: 97 Old Dock Road, Kings Park, NY 11754",
+            "url": "/event/39/"
+        },
+        "Lindenhurst Scrimmage": {
+            "date": "Dec. 12, 2018",
+            "location": "Lindenhurst",
+            "url": "/event/50/"
+        },
+        "The \"Get Rated\" Event!": {
+            "date": "Dec. 2, 2018",
+            "location": "The Player\u2019s Futsol: 5600 old sunrise highway, massapequa, NY 11758",
+            "url": "/event/38/"
+        },
+        "get rated manual input data": {
+            "date": "Dec. 2, 2018",
+            "location": "wantagh",
+            "url": "/event/49/"
+        },
+        "WAR Zone St Jams 11/4/2018": {
+            "date": "Nov. 4, 2018",
+            "location": "St James",
+            "url": "/event/37/"
+        },
+        "WAR Zone Manalapan 10/28/2018": {
+            "date": "Oct. 28, 2018",
+            "location": "Manalapan",
+            "url": "/event/36/"
+        },
+        "WAR Zone St James 10/14/2018": {
+            "date": "Oct. 14, 2018",
+            "location": "St James",
+            "url": "/event/33/"
+        },
+        "WAR Zone St James": {
+            "date": "Sept. 16, 2018",
+            "location": "St James",
+            "url": "/event/32/"
+        },
+        "Manalapan WAR Zone at Sportika": {
+            "date": "Sept. 9, 2018",
+            "location": "Manalapan",
+            "url": "/event/31/"
+        },
+        "Free Beta Test at Dynamic": {
+            "date": "Sept. 1, 2018",
+            "location": "Deerpark",
+            "url": "/event/30/"
+        },
+        "cancelled Long Island Youth Wrestling League Event #7 - KK Athletics - was 3/15/2020": {
+            "date": "March 15, 2017",
+            "location": "KK Athletics, 755 Horseblock Road, Farmingville, NY 11738",
+            "url": "/event/68/"
+        },
+        "Cancelled Long Island Youth Wrestling League Event #9 - KK Athletics - was 3/29/2020": {
+            "date": "March 29, 2016",
+            "location": "KK Athletics, 755 Horseblock Road, Farmingville, NY 11738",
+            "url": "/event/70/"
+        },
+        "cancelled - Long Island Youth Wrestling League Event #8 - The Sports Arena - was 3/22/20": {
+            "date": "March 22, 2016",
+            "location": "The Sports Arena: 620 Middle Country Road, St James, NY 11780",
+            "url": "/event/69/"
+        },
+        "For baseball cards": {
+            "date": "Jan. 2, 2015",
+            "location": "Nowhere",
+            "url": "/event/141/"
+        },
+        "Private Lesson Pairing": {
+            "date": "Jan. 1, 2015",
+            "location": "For analysis",
+            "url": "/event/85/"
+        }
+    }
+}

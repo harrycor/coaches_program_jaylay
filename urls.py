@@ -1,3 +1,4 @@
+import json
 from bs4 import BeautifulSoup
 import requests
 
@@ -90,20 +91,30 @@ for create in event_date_name_local:
         # print("*************")
         event_maker.append(create)
         if marker_event == 2:
-            # TODO append to dict and for loop to add url
             try:
                 event_maker.append(final_href[marker_url])
                 marker_event = 0
                 marker_url += 1
-                print(event_maker)
+                # print(event_maker)
+                date_event_maker = event_maker[0]
+                event_event_maker = event_maker[1]
+                location_event_maker = event_maker[2]
+                url_event_maker = event_maker[3]
+                json_data_dictionary["events"][event_event_maker] = {DATE: date_event_maker,
+                                                                     LOCATION: location_event_maker,
+                                                                     URL: url_event_maker}
                 event_maker = []
             except:
                 pass
         else:
             marker_event += 1
 
+json_event = json.dumps(json_data_dictionary, indent=4)
+print(json_event)
 
 
+with open(file="docs/references/events_data_inactive.json", mode="w") as file:
+    json.dump(json_data_dictionary, file, indent=4)
 
 # event page for a specific event (the demonstration event)
 #   pool weight range (at the top), the pairing pool, the link to the participant's list,
