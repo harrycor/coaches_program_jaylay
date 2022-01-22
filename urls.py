@@ -2,6 +2,8 @@ import json
 from bs4 import BeautifulSoup
 import requests
 
+# ****TODO ABSOLUTE MUST - ":" isnt being read by python correctly. can fix this easy if I remember correctly.
+# TODO maybe reorder the event title, date, location list before creating it for easier iteration during JSON creation
 
 # Constants
 EVENTS_URL = "https://test.wrestlingrating.com/events/"
@@ -54,57 +56,56 @@ for body_loop in tbody_data:
 # print(event_hrefs)
 
 
-# DATE, EVENT NAME, LOCATION list, there is a reason it was made seprate this way
-tbody_data_no_html = []  # HTML stripped of tags (still contains '1', '2', '3' as event number
+# DATE, EVENT NAME, LOCATION list, there is a REASON it was made separate this way
 event_date_name_local = []  # list of event-title, date, location, in that order
 # this loop strips HTML
 for stripper_loop in tbody_data:
     stripper_loop = stripper_loop.text.strip("\n")  # REASON - no href when 'stripped' - **must strip to isolate event
-
-    tbody_data_no_html.append(stripper_loop)
-#     print(stripper_loop)
-# print(tbody_data_no_html)
-
-for body_loop in tbody_data_no_html:
     try:
-        int(body_loop)
+        int(stripper_loop)
     except ValueError:
-        event_date_name_local.append(body_loop)
+        event_date_name_local.append(stripper_loop)
         # print(y)
     else:
         pass
+    # print(stripper_loop)
 # print(event_date_name_local)
 
 
-#
-event_maker = []    # used to load each events info before added to dict. deleted each loop
-
-marker_event = 0
+# dictionary data for JSON. uses event-title, date, name, location list, PLUS URL list to compile data
+event_placeholder = []    # used as placeholder to load each events info before adding to dict. emptied each loop around
+marker_event = 0        # acts as if router
 marker_url = 0
 for create in event_date_name_local:
     if marker_event <= 2:
         # print(create)
         # print("*************")
-        event_maker.append(create)
+        event_placeholder.append(create)    # adds event-title, date, location to placeholder
         if marker_event == 2:
             try:
-                event_maker.append(event_hrefs[marker_url])
-                marker_event = 0
-                marker_url += 1
+                event_placeholder.append(event_hrefs[marker_url])   # adds event URL to placeholder
+                marker_event = 0    # resets routing
+                marker_url += 1     # ensure correct URL is added to event
                 # print(event_maker)
-                date_event_maker = event_maker[0]
-                event_event_maker = event_maker[1]
-                location_event_maker = event_maker[2]
-                url_event_maker = event_maker[3]
+
+                # sets variables  for dict placement
+                date_event_maker = event_placeholder[0]
+                event_event_maker = event_placeholder[1]
+                location_event_maker = event_placeholder[2]
+                url_event_maker = event_placeholder[3]
+
+                        # Dictionary for JSON
                 data_dict_for_json["events"][event_event_maker] = {DATE: date_event_maker,
                                                                    LOCATION: location_event_maker,
                                                                    URL: url_event_maker}
-                event_maker = []
-            except:
+
+                event_placeholder = []      # resets placeholder for next event
+            except:     # for when event_hrefs index is out of range * change?
                 pass
         else:
-            marker_event += 1
+            marker_event += 1   # increases for routing (2 re-routes it)
 
+# JSON used from dictionary data
 json_event = json.dumps(data_dict_for_json, indent=4)
 print(json_event)
 # print("all good")
