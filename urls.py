@@ -2,85 +2,81 @@ import json
 from bs4 import BeautifulSoup
 import requests
 
+
 # Constants
+EVENTS_URL = "https://test.wrestlingrating.com/events/"
+
 DATE = "date"
 LOCATION = "location"
 URL = "url"
 
+INNER_LOOP_REFERENCE_URL = "/event/"
 
-json_data_dictionary = {
+# Data to create JSON
+data_dict_for_json = {
     "events": {
 
     }
 }
 
 
-# events and dates = https://test.wrestlingrating.com/events/
-
-events_list = []
-
-response_events = requests.get("https://test.wrestlingrating.com/events/", verify=False)
-response_events.raise_for_status()
-events_html = response_events.text
+# Pulls HTML data for scraping
+response = requests.get(EVENTS_URL, verify=False)
+response.raise_for_status()
+events_html = response.text  # HTML text
 # print(events_html)
-
-soup_events = BeautifulSoup(events_html, "html.parser")
-
-
-
-href_list = []
-final_href = []
-select_events = soup_events.select(selector="p tbody tr td")
-
-for x in select_events:
-    href_list.append(x)
-
-for y in href_list:
-    limbo = []
-    num = 0
-    # print(y)
-    for h in str(y):
-        if h == "\"":
-            num += 1
-        if num == 2:
-            combined = "".join(limbo)
-            # print(combined)
-            final_href.append(combined)
-            break
-        if num == 1:
-            if h == "\"":
-                pass
-            else:
-                limbo.append(h)
-
-print(final_href)
-# for this in final_href:
-#     print(this)
+soup_events = BeautifulSoup(events_html, "html.parser")  # puts HTML into "BeautifulSoup" for scraping
+tbody_data = soup_events.select(selector="p tbody tr td")    # table data from tbody (events info) (list)
+# print(tbody_data)
 
 
+# URL's list
+event_hrefs = []    # list of URL's
+for body_loop in tbody_data:
+    limbo = []      # placeholder for event url, empties once put in event_hrefs
+    route_num = 0         # used to direct if statements
+    # print(body_loop)
+    if INNER_LOOP_REFERENCE_URL in str(body_loop):     # if "/event" is in body_loop, inner loop executes
+        for anchor_loop in str(body_loop):
+            # print(h)
+            if anchor_loop == "\"":
+                route_num += 1
+            if route_num == 1:
+                if anchor_loop == "\"":
+                    pass
+                else:
+                    limbo.append(anchor_loop)   # adds character to limbo list eg: 'e', 'v', 'e', 'n', 't'
+            if route_num == 2:
+                combined = "".join(limbo)       # joins characters in limbo to make single str
+                # print(combined)
+                event_hrefs.append(combined)    # adds string to events_hrefs then breaks out of loop
+                break                               # and resets limbo for next item
+# print(event_hrefs)
 
 
+# DATE, EVENT NAME, LOCATION list, there is a reason it was made seprate this way
+tbody_data_no_html = []  # HTML stripped of tags (still contains '1', '2', '3' as event number
+event_date_name_local = []  # list of event-title, date, location, in that order
+# this loop strips HTML
+for stripper_loop in tbody_data:
+    stripper_loop = stripper_loop.text.strip("\n")  # REASON - no href when 'stripped' - **must strip to isolate event
 
-# select_events = soup_events.select(selector="p tbody tr td")
+    tbody_data_no_html.append(stripper_loop)
+#     print(stripper_loop)
+# print(tbody_data_no_html)
 
-listy = []
-event_date_name_local = []
-for x in select_events:
-    x = x.text.strip("\n")
-    listy.append(x)
-    # print(x)
-# print(listy)
-for y in listy:
+for body_loop in tbody_data_no_html:
     try:
-        int(y)
+        int(body_loop)
     except ValueError:
-        event_date_name_local.append(y)
+        event_date_name_local.append(body_loop)
         # print(y)
     else:
         pass
+# print(event_date_name_local)
 
-print(event_date_name_local)
 
+#
 event_maker = []    # used to load each events info before added to dict. deleted each loop
 
 marker_event = 0
@@ -92,7 +88,7 @@ for create in event_date_name_local:
         event_maker.append(create)
         if marker_event == 2:
             try:
-                event_maker.append(final_href[marker_url])
+                event_maker.append(event_hrefs[marker_url])
                 marker_event = 0
                 marker_url += 1
                 # print(event_maker)
@@ -100,21 +96,22 @@ for create in event_date_name_local:
                 event_event_maker = event_maker[1]
                 location_event_maker = event_maker[2]
                 url_event_maker = event_maker[3]
-                json_data_dictionary["events"][event_event_maker] = {DATE: date_event_maker,
-                                                                     LOCATION: location_event_maker,
-                                                                     URL: url_event_maker}
+                data_dict_for_json["events"][event_event_maker] = {DATE: date_event_maker,
+                                                                   LOCATION: location_event_maker,
+                                                                   URL: url_event_maker}
                 event_maker = []
             except:
                 pass
         else:
             marker_event += 1
 
-json_event = json.dumps(json_data_dictionary, indent=4)
+json_event = json.dumps(data_dict_for_json, indent=4)
 print(json_event)
+# print("all good")
 
 
-with open(file="docs/references/events_data_inactive.json", mode="w") as file:
-    json.dump(json_data_dictionary, file, indent=4)
+# with open(file="docs/references/events_data_inactive.json", mode="w") as file:
+#     json.dump(data_dict_for_json, file, indent=4)
 
 # event page for a specific event (the demonstration event)
 #   pool weight range (at the top), the pairing pool, the link to the participant's list,
