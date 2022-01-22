@@ -1,6 +1,18 @@
 from bs4 import BeautifulSoup
 import requests
 
+# Constants
+DATE = "date"
+LOCATION = "location"
+URL = "url"
+
+
+json_data_dictionary = {
+    "events": {
+
+    }
+}
+
 
 # events and dates = https://test.wrestlingrating.com/events/
 
@@ -17,7 +29,7 @@ soup_events = BeautifulSoup(events_html, "html.parser")
 
 href_list = []
 final_href = []
-select_events = soup_events.select(selector="p tbody tr td a")
+select_events = soup_events.select(selector="p tbody tr td")
 
 for x in select_events:
     href_list.append(x)
@@ -40,25 +52,55 @@ for y in href_list:
             else:
                 limbo.append(h)
 
-for this in final_href:
-    print(this)
+print(final_href)
+# for this in final_href:
+#     print(this)
+
+
+
 
 
 # select_events = soup_events.select(selector="p tbody tr td")
 
-# listy = []
-# for x in select_events:
-#     x = x.text.strip("\n")
-#     listy.append(x)
-#     # print(x)
+listy = []
+event_date_name_local = []
+for x in select_events:
+    x = x.text.strip("\n")
+    listy.append(x)
+    # print(x)
 # print(listy)
-# for y in listy:
-#     try:
-#         int(y)
-#     except ValueError:
-#         print(y)
-#     else:
-#         pass
+for y in listy:
+    try:
+        int(y)
+    except ValueError:
+        event_date_name_local.append(y)
+        # print(y)
+    else:
+        pass
+
+print(event_date_name_local)
+
+event_maker = []    # used to load each events info before added to dict. deleted each loop
+
+marker_event = 0
+marker_url = 0
+for create in event_date_name_local:
+    if marker_event <= 2:
+        # print(create)
+        # print("*************")
+        event_maker.append(create)
+        if marker_event == 2:
+            # TODO append to dict and for loop to add url
+            try:
+                event_maker.append(final_href[marker_url])
+                marker_event = 0
+                marker_url += 1
+                print(event_maker)
+                event_maker = []
+            except:
+                pass
+        else:
+            marker_event += 1
 
 
 

@@ -1,0 +1,24 @@
+{
+    "events": {
+        "demo evnent": {
+            "date": "jan. 1, 2020",
+            "location": "over the rainbow",
+            "url": "/event/143"
+        },
+        "War Zone local": {
+            "date": "may. 23, 2021",
+            "location": "shack",
+            "url": "/event/12"
+        },
+        "tourney": {
+            "date": "june. 3, 2023",
+            "location": "utah",
+            "url": "/event/105"
+        },
+        "new event": {
+            "date": "jan 1, 2011",
+            "local": "ohio",
+            "url": "/event/123"
+        }
+    }
+}
