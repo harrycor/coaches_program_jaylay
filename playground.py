@@ -13,43 +13,44 @@ from bs4 import BeautifulSoup
 import requests
 import json
 
-DATE = "date"
-LOCATION = "local"
-URL = "url"
-"Player’s"
-"Player’'';,`~s"
+# DATE = "date"
+# LOCATION = "local"
+# URL = "url"
+# "Player’s"
+# "Player’'';,`~s"
+#
+# json_data = {"events": {
+#     "demo evnent":
+#         {"date": "jan. 1, 2020", "location": "over’s the rainbow  ******", "url": "/event/143"},
+#     "War Zone local":
+#         {"date": "may. 23, 2021", "location": "shack", "url": "/event/12"},
+#     "tourney":
+#         {"date": "june. 3, 2023", "location": "utah's", "url": "/event/105"},
+# }
+#              }
+#
+#
+# # json_data["events"]["new event"] = {DATE: "jan 1, 2011", LOCATION: "ohio", URL: "/event/123"}
+#
+#
+# data_load = json.dumps(json_data, indent=4)
+# print(data_load)
+#
+# print()
+# print("******")
+# print()
+#
+# this = ["hello", "there", "this isn’t", "okay"]
+# for x in this:
+#     if "’" in x:
+#         print("here")
+#         y = x.replace("’", "fixed")
+#         print(y)
+#         continue
+#     else:
+#         pass
+#     print(x)
 
-json_data = {"events": {
-    "demo evnent":
-        {"date": "jan. 1, 2020", "location": "over’s the rainbow  ******", "url": "/event/143"},
-    "War Zone local":
-        {"date": "may. 23, 2021", "location": "shack", "url": "/event/12"},
-    "tourney":
-        {"date": "june. 3, 2023", "location": "utah's", "url": "/event/105"},
-}
-             }
-
-
-# json_data["events"]["new event"] = {DATE: "jan 1, 2011", LOCATION: "ohio", URL: "/event/123"}
-
-
-data_load = json.dumps(json_data, indent=4)
-print(data_load)
-
-print()
-print("******")
-print()
-
-this = ["hello", "there", "this isn’t", "okay"]
-for x in this:
-    if "’" in x:
-        print("here")
-        y = x.replace("’", "fixed")
-        print(y)
-        continue
-    else:
-        pass
-    print(x)
 
 # with open(file="docs/tests/test_written_events.json", mode="w") as file:
 #     json.dump(json_data, file, indent=4)
@@ -77,3 +78,50 @@ for x in this:
 #         # print(z)
 # for h in this:
 #     print(h)
+
+
+
+
+participants_and_teams = {
+    "demo event name": {
+        "data": {"url": "event/000/demo-event-name"},
+        "teams": {
+            "dynamic": {
+                "jim": {
+                    "id": 1832,
+                    "age": 11,
+                    "team": "dynamic",
+                    "weight": 152.2,
+                    "WAR": 887.3
+                },
+                "joe": {
+                    "id": 432,
+                    "age": 15,
+                    "team": "dynamic",
+                    "weight": 130.2,
+                    "WAR": 527.3
+                }
+            },
+            "team cool": {
+                "john": {
+                    "id": 1832,
+                    "age": 11,
+                    "team": "team cool",
+                    "weight": 152.2,
+                    "WAR": 887.3
+                },
+                "mike": {
+                    "id": 432,
+                    "age": 15,
+                    "team": "team cool",
+                    "weight": 130.2,
+                    "WAR": 527.3
+                }
+            }
+        },
+
+    },
+}
+
+# with open(file="docs/tests/test_participants.json", mode="w") as file:
+#     json.dump(participants_and_teams, file, indent=6)

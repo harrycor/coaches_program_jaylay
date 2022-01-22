@@ -1,6 +1,6 @@
-# import json
-# from bs4 import BeautifulSoup
-# import requests
+import json
+from bs4 import BeautifulSoup
+import requests
 #
 # # ****TODO ABSOLUTE MUST - ":" isnt being read by python correctly. can fix this easy if I remember correctly.
 # # TODO maybe reorder the event title, date, location list before creating it for easier iteration during JSON creation
@@ -131,9 +131,34 @@
 
 
 
+#  *************************************************************************************************************
+
+# PARTICIPANTS DATA
+# ***SPECIFIED EVENT PAGE must work for ALL event urls***
+# TODO get- paring pool que. weight range. for each event
+# TODO go to total participants url > 'get id num' then go to participants page > get age, team, weight, WAR
+# TODO wrestlers: name; id (get from full list of participants), age, team, weight, war
+# TODO to create json for each team
+
+# Constants
+EVENTS_URL = "https://test.wrestlingrating.com/event/174/demonstration-event/"  # "event num/demo even" will be diff
+
+# Pulls HTML data for scraping
+response = requests.get(EVENTS_URL, verify=False)
+response.raise_for_status()
+events_html = response.text  # HTML text
+# print(events_html)
+soup_event = BeautifulSoup(events_html, "html.parser")  # puts HTML into "BeautifulSoup" for scraping
+tbody_data = soup_event.select(selector="p tbody tr td")    # table data from tbody (events info) (list)
+print(soup_event)
 
 
 
 
 
 
+
+
+
+# with open(file="docs/references/sec_event_data.html", mode="w") as file:
+#     file.write(events_html)

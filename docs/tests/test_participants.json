@@ -1,0 +1,41 @@
+{
+      "demo event name": {
+            "data": {
+                  "url": "event/000/demo-event-name"
+            },
+            "teams": {
+                  "dynamic": {
+                        "jim": {
+                              "id": 1832,
+                              "age": 11,
+                              "team": "dynamic",
+                              "weight": 152.2,
+                              "WAR": 887.3
+                        },
+                        "joe": {
+                              "id": 432,
+                              "age": 15,
+                              "team": "dynamic",
+                              "weight": 130.2,
+                              "WAR": 527.3
+                        }
+                  },
+                  "team cool": {
+                        "john": {
+                              "id": 1832,
+                              "age": 11,
+                              "team": "team cool",
+                              "weight": 152.2,
+                              "WAR": 887.3
+                        },
+                        "mike": {
+                              "id": 432,
+                              "age": 15,
+                              "team": "team cool",
+                              "weight": 130.2,
+                              "WAR": 527.3
+                        }
+                  }
+            }
+      }
+}

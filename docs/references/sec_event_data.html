@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+             padding-top: 4.5rem;
+              margin-bottom: 60px;
+              background-color: #f5f5f5;
+             }
+             html {
+  position: relative;
+  min-height: 100%;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+.top-buffer { margin-top:20px; }
+
+   </style>
+    <title>
+        
+    Demonstration event
+
+    </title>
+    
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/">  
+                WAR Zone - Folkstyle
+                
+                <sup><sup>Beta</sup></sup></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link right" href="/buy">Buy Tokens</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/events/">Register for an Event</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/events/">Find a Match</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/rankings/">Rankings</a>
+          </li>
+            
+          <li class="nav-item">
+            <a class="nav-link" href="/accounts/login/">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/accounts/register">Sign up</a>
+          </li>
+            
+        </ul>
+      </div>
+    </nav>
+    <div class = "container">
+
+            
+    </div>
+
+
+
+
+        
+<div class="container">
+    <div class = "row">
+         <div class = "col s12">
+        
+                                    <a href="/event/174/join/" class="btn btn-primary btn-block">
+                                        Click here to register for this event
+                                    </a>
+
+        
+      </div>
+    </div>
+    <div class = "top-buffer"></div>
+  <div class = "row">
+
+        <div class = "col s12">
+                <div class = "card border-secondary mb-3">
+                    <div class = "card-header">
+                           Pairing Pool Queue <small class="text-muted">13 wrestlers in queue</small>
+                           <br>
+                           Weight range: 0.0-999.9 lbs
+                            
+
+                        </div>
+
+                    <div class = "card-body">
+                          
+                         Welcome to the pairing pool! Wrestlers will be paired in a match when they are next in line,
+                        <strong>or when they are the best matchup for whoever is next in line. This means you may be selected
+                            for a match before you reach the front of the line, so BE READY TO RUMBLE!</strong>
+
+
+
+                        
+
+
+                            <p class="card-text">
+                            
+                            <form id = "pool_form" action="/event/174/pool/" method = "post">
+                                                    <input type='hidden' name='csrfmiddlewaretoken' value='mpkscrwwF9w0mFodotdfp0ViY1JkVSINiCRMOHk4jh2kE9FfOayCNMk0v05hMJBe' />
+                                                    <input type="hidden" value="None" name="id">
+                                                <button type = "submit" name="submit" class="btn btn-success btn-block">
+                                                    Find a match -- 0.00 token(s)
+                                                </button>
+                            </form>
+                            
+
+                            <table class="table table-striped text-center">
+                                <thead>
+                                    <tr>
+                                        <th scope ="col">Order</th>
+                                        <th scope ="col">Name</th>
+                                        <th scope ="col">Weight</th>
+                                        <th scope ="col">Age</th>
+                                        <th scope ="col">Weight-Adjusted Rating</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                
+                                
+                                <tr>
+                                
+                                     
+                                     <td>1.</td>
+                                    <td><a href="/player/950/wally-jelani-faiz/">Wally Jelani Faiz</a></td>
+
+                                    <td>125.1 lbs</td>
+                                    <td>13.5 years</td>
+                                    <td>8448.1</td>
+
+                                     
+                                    
+                                </tr>
+                                
+                                
+                                <tr>
+                                
+                                     
+                                     <td>2.</td>
+                                    <td><a href="/player/887/sean-lynn/">Sean Lynn</a></td>
+
+                                    <td>110.1 lbs</td>
+                                    <td>12.2 years</td>
+                                    <td>6918.8</td>
+
+                                     
+                                    
+                                </tr>
+                                
+                                
+                                <tr>
+                                
+                                     
+                                     <td>3.</td>
+                                    <td><a href="/player/989/cole-lograno/">Cole Lograno</a></td>
+
+                                    <td>100.1 lbs</td>
+                                    <td>12.3 years</td>
+                                    <td>7595.0</td>
+
+                                     
+                                    
+                                </tr>
+                                
+                                
+                                <tr>
+                                
+                                     
+                                     <td>4.</td>
+                                    <td><a href="/player/662/travis-smith/">Travis Smith</a></td>
+
+                                    <td>99.0 lbs</td>
+                                    <td>12.6 years</td>
+                                    <td>5757.5</td>
+
+                                     
+                                    
+                                </tr>
+                                
+                                
+                                <tr>
+                                
+                                     
+                                     <td>5.</td>
+                                    <td><a href="/player/644/anthony-severino/">Anthony Severino</a></td>
+
+                                    <td>92.4 lbs</td>
+                                    <td>13.4 years</td>
+                                    <td>6668.8</td>
+
+                                     
+                                    
+                                </tr>
+                                
+                                
+                                <tr>
+                                
+                                     
+                                     <td>6.</td>
+                                    <td><a href="/player/5299/brandon-kellar/">Brandon Kellar</a></td>
+
+                                    <td>89.2 lbs</td>
+                                    <td>11.9 years</td>
+                                    <td>6163.1</td>
+
+                                     
+                                    
+                                </tr>
+                                
+                                
+                                <tr>
+                                
+                                     
+                                     <td>7.</td>
+                                    <td><a href="/player/467/lukas-ryan/">Lukas Ryan</a></td>
+
+                                    <td>54.0 lbs</td>
+                                    <td>11.5 years</td>
+                                    <td>4506.5</td>
+
+                                     
+                                    
+                                </tr>
+                                
+                                
+                                <tr>
+                                
+                                     
+                                     <td>8.</td>
+                                    <td><a href="/player/581/branden-ortiz/">Branden Ortiz</a></td>
+
+                                    <td>50.0 lbs</td>
+                                    <td>22.4 years</td>
+                                    <td>4138.7</td>
+
+                                     
+                                    
+                                </tr>
+                                
+                                
+                                <tr>
+                                
+                                     
+                                     <td>9.</td>
+                                    <td><a href="/player/540/alykco-pinkney/">Alykco Pinkney</a></td>
+
+                                    <td>39.0 lbs</td>
+                                    <td>8.4 years</td>
+                                    <td>2224.6</td>
+
+                                     
+                                    
+                                </tr>
+                                
+                                
+                                <tr>
+                                
+                                     
+                                     <td>10.</td>
+                                    <td><a href="/player/566/steven-pabon/">Steven Pabon</a></td>
+
+                                    <td>141.5 lbs</td>
+                                    <td>21.3 years</td>
+                                    <td>9151.5</td>
+
+                                     
+                                    
+                                </tr>
+                                
+                                
+                                <tr>
+                                
+                                     
+                                     <td>11.</td>
+                                    <td><a href="/player/599/raymond-mcnulty/">Raymond McNulty</a></td>
+
+                                    <td>82.2 lbs</td>
+                                    <td>14.3 years</td>
+                                    <td>6501.7</td>
+
+                                     
+                                    
+                                </tr>
+                                
+                                
+                                <tr>
+                                
+                                     
+                                     <td>12.</td>
+                                    <td><a href="/player/880/logan-galvez/">Logan Galvez</a></td>
+
+                                    <td>37.0 lbs</td>
+                                    <td>7.2 years</td>
+                                    <td>2799.9</td>
+
+                                     
+                                    
+                                </tr>
+                                
+                                
+                                <tr>
+                                
+                                     
+                                     <td>13.</td>
+                                    <td><a href="/player/628/paul-zummo/">Paul Zummo</a></td>
+
+                                    <td>125.2 lbs</td>
+                                    <td>19.5 years</td>
+                                    <td>8214.6</td>
+
+                                     
+                                    
+                                </tr>
+                                
+                                </tbody>
+                             </table>
+                        <br>
+                        <br>
+
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    <div class = "row">
+
+        <div class = "col s12 m4">
+            <div class = "card border-secondary mb-3">
+                <div class="card-header">
+                    Event Information
+                </div>
+                <div class = "card-body">
+
+                        <h4 class="card-title">Demonstration event</h4>
+                    <p class="card-text">
+                        <br>
+                        Date: Jan. 1, 2023
+                        <br>
+                        Location: Somewhere Over The Rainbow
+                        <br>
+                        Minimum Weight: 0.0
+                        <br>
+                        Maximum Weight: 500.0
+                        <br>
+                        Number of Mats: 2
+                        <br>
+                        Maximum Weight Difference: 99.0%
+                        <br>
+                        Maximum Age Difference: 99.0%
+                        <br>
+                        Event Entry Fee: 0.00 token(s)
+                        <br>
+                        Cost Per Match: 0.00 token(s)
+
+                        
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class = "col s12 m4">
+            <div class = "card border-secondary mb-3">
+                <div class = "card-header">
+                    Participants
+                </div>
+                <div class ="card-body">
+                    <p class="card-text">
+                    <a href ="/event/174/participants/">Total Participants: 109</a>
+                    <br>
+                    <br>
+                    
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class = "col s12 m4">
+            <div class = "card border-secondary mb-3">
+                <div class = "card-header">
+                    Results
+                    </div>
+                <div class ="card-body">
+
+                    <p class="card-text">
+                    <a href ="/event/174/results/">Total Matches: 72</a>
+                        
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="top-buffer"></div>
+
+    <div class="row">
+       <div class = "col s12 m4">
+                <div class = "card border-secondary mb-3">
+                    <div class = "card-header">
+                            Mats
+                        </div>
+                    <div class = "card-body">
+
+                             <p class="card-text">
+                            
+                            <a href="/event/174/mat/1">Mat 1</a>:
+                                
+                                    Nicholas RAPTIS (Elite Wrestling) 5455.9 vs James McMann (maine) 5157.8
+                                     <br>
+                                
+                                    Reid Miles (Team United) 4304.8 vs Alex Bruno (Patchogue Medford) 4237.4
+                                     <br>
+                                
+                                    Nick Florin (Vision) 4406.5 vs Anthony Obando (brentwood) 4470.6
+                                     <br>
+                                
+                                    Nick Moldaver (elite) 8519.5 vs JT Mankowich (Barn Brothers) 8724.9
+                                     <br>
+                                
+                            <br>
+                            
+                            <a href="/event/174/mat/2">Mat 2</a>:
+                                
+                                    Henry Baronowski (Dynamic) 3759.2 vs Gianni Mamani (Brentwood) 4003.5
+                                     <br>
+                                
+                                    Brett Poirier (Kryptonite) 6487.6 vs Jason Milligan (Great cool guys) 6590.7
+                                     <br>
+                                
+                                    Colton Riordan (Dynamic) 4344.0 vs Ronin Barro (elite) 4219.6
+                                     <br>
+                                
+                            <br>
+                            
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        
+        
+
+<footer class="footer">
+    <div class ="container">
+      <p>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Well Run Tournaments, LLC. Patent pending.</p>
+    </div>
+</footer>
+</body>
+</html>
