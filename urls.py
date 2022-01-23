@@ -133,7 +133,7 @@ import requests
 
 #  *************************************************************************************************************
 
-# PARTICIPANTS DATA
+# PARTICIPANTS DATA **** this will not be the final list - this will only ret info needed to complete JSON
 # ***SPECIFIED EVENT PAGE must work for ALL event urls***
 # TODO get- paring pool que. weight range. for each event
 # TODO go to total participants url > 'get id num' then go to participants page > get age, team, weight, WAR
@@ -151,14 +151,8 @@ EVENT = MAIN_SITE_ADDY + INNER_LOOP_REFERENCE_URL + EVENT_URL
 
 ISO_EVENT_NAME = "event name pending"
 
-# final JSON
-participants_list_by_event = {
-    ISO_EVENT_NAME: {
-        "teams": {
+# final JSON for participants list not by teams
 
-        }
-    }
-}
 
 
 # Pulls HTML data (event page) for scraping
@@ -177,7 +171,7 @@ participants_href_html = soup_event.find_all(name="div", class_="col s12 m4")[1]
 #  getting participants URL href no html - list
 participants_url_list = []  # list of URL's
 for body_loop in participants_href_html:
-    limbo = []  # placeholder for event url, empties once put in event_hrefs
+    limbo = []  # placeholder for participants page url, empties once put in event_hrefs
     route_num = 0  # used to direct if statements
     # print(body_loop)
     if INNER_LOOP_REFERENCE_URL in str(body_loop):  # if "/event" is in body_loop, inner loop executes
@@ -199,7 +193,7 @@ participants_url_to_str = ""
 for url_to_str in participants_url_list:
     participants_url_to_str = url_to_str
 participants_final_url = MAIN_SITE_ADDY + participants_url_to_str
-# print(participants_list_url)
+# print(participants_final_url)
 # probably would return this url to def
 
 
@@ -210,9 +204,16 @@ response_participants.raise_for_status()
 participants_html = response_participants.text  # HTML text
 soup_participants = BeautifulSoup(participants_html, "html.parser")  # puts HTML into "BeautifulSoup" for scraping
 
+# iso list data
+iso_participant_data_html = soup_participants.select(selector="tbody tr td")
+# print(iso_participant_data)
 
-#
-
+participant_data_list = []
+for p_list_grabber in iso_participant_data_html:
+    participant_data_list.append(p_list_grabber.text)
+print(participant_data_list)
+# for z in participant_data_list:
+#     print(z)
 
 
 
