@@ -141,20 +141,58 @@ import requests
 # TODO to create json for each team
 
 # Constants
-EVENTS_URL = "https://test.wrestlingrating.com/event/174/demonstration-event/"  # "event num/demo even" will be diff
+# "event num/demo even" will be diff
+"https://test.wrestlingrating.com/event/174/participants/"
+MAIN_SITE_ADDY = "https://test.wrestlingrating.com"
+EVENT_URL = "/174/demonstration-event/"
+# PARTICIPANTS_LIST_URL = "/event/174/participants/"
+INNER_LOOP_REFERENCE_URL = "/event/"
+EVENT = MAIN_SITE_ADDY + INNER_LOOP_REFERENCE_URL + EVENT_URL
 
-# Pulls HTML data for scraping
-response = requests.get(EVENTS_URL, verify=False)
-response.raise_for_status()
-events_html = response.text  # HTML text
+
+# Pulls HTML data (event page) for scraping
+response_event = requests.get(EVENT, verify=False)
+response_event.raise_for_status()
+event_html = response_event.text  # HTML text
 # print(events_html)
-soup_event = BeautifulSoup(events_html, "html.parser")  # puts HTML into "BeautifulSoup" for scraping
-tbody_data = soup_event.select(selector="p tbody tr td")    # table data from tbody (events info) (list)
-print(soup_event)
+soup_event = BeautifulSoup(event_html, "html.parser")  # puts HTML into "BeautifulSoup" for scraping
 
 
+# event HTML url
+participants_url_html = soup_event.find_all(name="div", class_="col s12 m4")[1]("a")
+# print(participants_url_html)
 
 
+#  getting participants URL no html - list
+paticipants_url = []  # list of URL's
+for body_loop in participants_url_html:
+    limbo = []  # placeholder for event url, empties once put in event_hrefs
+    route_num = 0  # used to direct if statements
+    # print(body_loop)
+    if INNER_LOOP_REFERENCE_URL in str(body_loop):  # if "/event" is in body_loop, inner loop executes
+        for anchor_loop in str(body_loop):
+            # print(h)
+            if anchor_loop == "\"":
+                route_num += 1
+            if route_num == 1:
+                if anchor_loop == "\"":
+                    pass
+                else:
+                    limbo.append(anchor_loop)  # adds character to limbo list eg: 'e', 'v', 'e', 'n', 't'
+            if route_num == 2:
+                combined = "".join(limbo)  # joins characters in limbo to make single str
+                # print(combined)
+                paticipants_url.append(combined)  # adds string to events_hrefs then breaks out of loop
+                break  # and resets limbo for next item
+participants_url_str = ""
+for url_to_str in paticipants_url:
+    participants_url_str = url_to_str
+participants_list_url = MAIN_SITE_ADDY + participants_url_str
+# print(participants_list_url)
+# probably would return this url to def
+
+
+# go to participants list
 
 
 
