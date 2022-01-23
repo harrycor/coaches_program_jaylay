@@ -125,3 +125,33 @@ participants_and_teams = {
 
 # with open(file="docs/tests/test_participants.json", mode="w") as file:
 #     json.dump(participants_and_teams, file, indent=6)
+if "team cool" in participants_and_teams["demo event name"]["teams"]:
+    print("yes")
+else:
+    print("no")
+
+
+
+scrape_from_participants_list = {
+    "participants": {
+        1: {
+            "id": 1385,
+            "name": "devin mcribb",
+            "weight": "273 lbs",
+            "age": 19,
+            "WAR": 12260,
+            "wrestlers url": "/1385/player"
+        },
+        2: {
+            "id": 32,
+            "name": "broseph",
+            "weight": "999 lbs",
+            "age": 112,
+            "WAR": 321,
+            "wrestlers url": "sly"
+        }
+    }
+}
+
+with open(file="docs/tests/participants_page_grab_ex.json", mode="w") as file:
+    json.dump(scrape_from_participants_list, file, indent=6)

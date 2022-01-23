@@ -149,6 +149,17 @@ EVENT_URL = "/174/demonstration-event/"
 INNER_LOOP_REFERENCE_URL = "/event/"
 EVENT = MAIN_SITE_ADDY + INNER_LOOP_REFERENCE_URL + EVENT_URL
 
+ISO_EVENT_NAME = "event name pending"
+
+# final JSON
+participants_list_by_event = {
+    ISO_EVENT_NAME: {
+        "teams": {
+
+        }
+    }
+}
+
 
 # Pulls HTML data (event page) for scraping
 response_event = requests.get(EVENT, verify=False)
@@ -159,13 +170,13 @@ soup_event = BeautifulSoup(event_html, "html.parser")  # puts HTML into "Beautif
 
 
 # event HTML url
-participants_url_html = soup_event.find_all(name="div", class_="col s12 m4")[1]("a")
-# print(participants_url_html)
+participants_href_html = soup_event.find_all(name="div", class_="col s12 m4")[1]("a")
+# print(participants_href_html)
 
 
-#  getting participants URL no html - list
-paticipants_url = []  # list of URL's
-for body_loop in participants_url_html:
+#  getting participants URL href no html - list
+participants_url_list = []  # list of URL's
+for body_loop in participants_href_html:
     limbo = []  # placeholder for event url, empties once put in event_hrefs
     route_num = 0  # used to direct if statements
     # print(body_loop)
@@ -182,21 +193,29 @@ for body_loop in participants_url_html:
             if route_num == 2:
                 combined = "".join(limbo)  # joins characters in limbo to make single str
                 # print(combined)
-                paticipants_url.append(combined)  # adds string to events_hrefs then breaks out of loop
+                participants_url_list.append(combined)  # adds string to events_hrefs then breaks out of loop
                 break  # and resets limbo for next item
-participants_url_str = ""
-for url_to_str in paticipants_url:
-    participants_url_str = url_to_str
-participants_list_url = MAIN_SITE_ADDY + participants_url_str
+participants_url_to_str = ""
+for url_to_str in participants_url_list:
+    participants_url_to_str = url_to_str
+participants_final_url = MAIN_SITE_ADDY + participants_url_to_str
 # print(participants_list_url)
 # probably would return this url to def
 
 
 # go to participants list
+# Pulls HTML data (participant page) for scraping
+response_participants = requests.get(participants_final_url, verify=False)
+response_participants.raise_for_status()
+participants_html = response_participants.text  # HTML text
+soup_participants = BeautifulSoup(participants_html, "html.parser")  # puts HTML into "BeautifulSoup" for scraping
+
+
+#
 
 
 
 
 
-# with open(file="docs/references/sec_event_data.html", mode="w") as file:
-#     file.write(events_html)
+# with open(file="docs/references/participants_html.html", mode="w") as file:
+#     file.write(participants_html)

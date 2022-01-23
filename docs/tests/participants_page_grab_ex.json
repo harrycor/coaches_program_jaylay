@@ -1,0 +1,20 @@
+{
+      "participants": {
+            "1": {
+                  "id": 1385,
+                  "name": "devin mcribb",
+                  "weight": "273 lbs",
+                  "age": 19,
+                  "WAR": 12260,
+                  "wrestlers url": "/1385/player"
+            },
+            "2": {
+                  "id": 32,
+                  "name": "broseph",
+                  "weight": "999 lbs",
+                  "age": 112,
+                  "WAR": 321,
+                  "wrestlers url": "sly"
+            }
+      }
+}
