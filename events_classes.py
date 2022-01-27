@@ -1,6 +1,8 @@
 import json
 from bs4 import BeautifulSoup
 import requests
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # TODO maybe reorder the event title, date, location list before creating it for easier iteration during JSON creation
 
@@ -27,7 +29,7 @@ class EventsData:
         self.url_list = self.url_list_create(tbody_data)
         self.event_info = self.event_info_create(tbody_data)
         self.data_dict_for_json = self.data_dict_create(self.event_info, self.url_list)
-        self.json_file = self.json_create(self.data_dict_for_json)
+        self.json_file = self.json_create(self.data_dict_for_json)  # all you need right here
 
     def url_list_create(self, data):
         # URL's list

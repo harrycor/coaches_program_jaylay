@@ -80,8 +80,6 @@ import json
 #     print(h)
 
 
-
-
 participants_and_teams = {
     "demo event name": {
         "data": {"url": "event/000/demo-event-name"},
@@ -130,8 +128,6 @@ if "team cool" in participants_and_teams["demo event name"]["teams"]:
 else:
     print("no")
 
-
-
 scrape_from_participants_list = {
     "participants": {
         1: {
@@ -153,5 +149,34 @@ scrape_from_participants_list = {
     }
 }
 
-with open(file="docs/tests/participants_page_grab_ex.json", mode="w") as file:
-    json.dump(scrape_from_participants_list, file, indent=6)
+# for x in scrape_from_participants_list["participants"]:
+#     print(x)
+# with open(file="docs/tests/participants_page_grab_ex.json", mode="w") as file:
+#     json.dump(scrape_from_participants_list, file, indent=6)
+
+# hey = "h%el%lo"
+#
+# a = hey.replace("%", "")
+# print(a)
+
+# print("/")
+
+
+testing = {"dynamic": {
+    "jim": {
+        "id": 1832,
+        "age": 11,
+        "team": "dynamic",
+        "weight": 152.2,
+        "WAR": 887.3
+    },
+    "joe": {
+        "id": 432,
+        "age": 15,
+        "team": "dynamic",
+        "weight": 130.2,
+        "WAR": 527.3
+    }}}
+
+testing["dynamic"] = {"bill": {"id": 123, "war": 1233, "team": "cool"}}
+print(testing)
