@@ -2,7 +2,7 @@ import json
 import events_classes
 import participants_class
 import team_get_class
-
+import current_status_class
 import tkinter as tk
 
 # CONSTANTS
@@ -13,6 +13,7 @@ AGE = "age"
 WAR = "WAR"
 PLAYER_PAGE = "url"
 TEAM = "team"
+STATUS = "status"
 
 # Tkinter
 DROPDOWN_PADDING = (15, 15)
@@ -27,18 +28,23 @@ list_of_events = []
 for x in events_url["events"]:
     list_of_events.append(x)
 # print(list_of_events)
-t_for_c = {}
-e_name = ""
+
+t_for_c = {}  # team for coaches
+e_name = ""  # event name globals
+e_url = ""  # event url
 
 
 def url():
     global t_for_c
     global e_name
+    global e_url
     site = clicked_events.get()
     e_name = site
     teams_for_coaches = {site: {}}
     # print(site)
     url_to_send = events_url["events"][site]["url"]
+    e_url = url_to_send
+    # print(e_url)
     participants_list_gather = participants_class.ParticipantsInfoForSend(url_to_send)
     list_ret = participants_list_gather.participants_list_event
     # print(list_ret)
@@ -62,7 +68,7 @@ def url():
                     AGE: age,
                     WEIGHT: weight,
                     WAR: war,
-                    "status": "pending"
+                    STATUS: "pending"
                 }
         except KeyError:
             teams_for_coaches[site][team_name] = {name: {
@@ -70,7 +76,7 @@ def url():
                     AGE: age,
                     WEIGHT: weight,
                     WAR: war,
-                    "status": "pending"
+                    STATUS: "pending"
                 }}
 
     # print(teams_for_coaches)
@@ -96,8 +102,20 @@ def check_status():
     for x in t_for_c[e_name]:
         if x == team_select:
             coaches_rev = {team_select: t_for_c[e_name][x]}
-            coaches_new = json.dumps(coaches_rev, indent=4)
-            print(coaches_new)
+            coaches_new = json.dumps(coaches_rev, indent=6)
+            # print(coaches_new)
+            team_status(coaches_rev)
+
+
+def team_status(lineup):
+    team_live = current_status_class.Live(e_url, lineup)
+
+
+def event_status():
+    live = current_status_class.Live(e_url)
+    event_j = json.dumps(live.live_info, indent=6)
+    print(event_j)
+
 
 
 
@@ -132,5 +150,9 @@ events_button.grid(row=1, column=0)
 # team button
 team_button = tk.Button(text="team status", command=check_status)
 team_button.grid(row=1, column=1)
+
+# event status button
+status_button = tk.Button(text="event status", command=event_status)
+status_button.grid(row=2, column=1, pady=DROPDOWN_PADDING)
 
 window.mainloop()

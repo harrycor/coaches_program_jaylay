@@ -178,5 +178,6 @@ testing = {"dynamic": {
         "WAR": 527.3
     }}}
 
-testing["dynamic"] = {"bill": {"id": 123, "war": 1233, "team": "cool"}}
-print(testing)
+# testing["dynamic"] = {"bill": {"id": 123, "war": 1233, "team": "cool"}}
+for x in testing.values():
+    print(x)

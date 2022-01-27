@@ -123,7 +123,7 @@ class ParticipantsInfoForSend:
                     name_2 = name_1.replace("\'", "")
                     name_for_url = name_2.replace("/", "")
                     url = f"/{player_id}/{name_for_url}"
-                    ret_this_dict[part_num] = {ID: player_id, NAME: name, WEIGHT: weight, AGE: age, WAR: war,
+                    ret_this_dict[part_num] = {ID: player_id, NAME: name_before, WEIGHT: weight, AGE: age, WAR: war,
                                                PLAYER_PAGE: url}
                     part_num += 1
                     route_num = 0
