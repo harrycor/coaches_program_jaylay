@@ -5,6 +5,14 @@ import team_get_class
 import current_status_class
 import tkinter as tk
 
+
+# **** Directions. 1. select event from drop down
+#                  2. hit "Find Participants" button below.
+#                  3. select team from drop down
+#                  4. hit "teams status".
+#                  * note: can hit "event status" button any time after step 2.
+
+
 # CONSTANTS
 ID = "id"
 NAME = "name"
