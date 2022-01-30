@@ -140,7 +140,7 @@ teams = ["dynamic", "team 10", "team 20", "team 30", "team 40"]
 # Dropdowns
 # events *
 clicked_events = tk.StringVar()
-clicked_events.set("select events")
+clicked_events.set("select event")
 drop_events = tk.OptionMenu(window, clicked_events, *events)
 drop_events.grid(row=0, column=0, pady=DROPDOWN_PADDING)
 
